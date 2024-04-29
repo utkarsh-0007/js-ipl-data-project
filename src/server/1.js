@@ -5,7 +5,6 @@ fs.createReadStream('../data/matches.csv').pipe(csv()).on('data',(row)=>{
 const year=row.season;
 if(!abc[year]){abc[year]=1} else abc[year]++;
 })
-
 .on('end',()=>{console.log(abc)
 
 
