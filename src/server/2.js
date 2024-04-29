@@ -12,7 +12,8 @@ if(!output[row.winner][row.season]){
 
 
 
-fs.writeFile('../public/output/wonmatchteam.json', JSON.stringify(output), (err) => {
+
+    fs.writeFile('../public/output/wonmatchteam.json', JSON.stringify(output), (err) => {
     if (err) {
       console.error('Error writing JSON file', err);
       return;
